@@ -1,9 +1,6 @@
 function SpiderMan () {
 	
 }
-function Evil_Dominator () {
-	
-}
 function Traveler () {
     scene.setBackgroundImage(img`
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -132,6 +129,17 @@ function Traveler () {
     story.printText("You Start Travling around the world!", 75, 110, 1, 15)
     story.printText("You live happly after and after", 75, 110, 1, 15)
     game.over(true, effects.confetti)
+}
+function Lazer_eyes () {
+    story.printText("You got Lzaer eyes", 75, 110)
+    story.printText("Great powers come with responsiblity", 75, 110)
+    story.printText("What do you do with this powers?", 75, 110)
+    story.showPlayerChoices("Become a HERO", "Become a VILLAN")
+    if (story.checkLastAnswer("Become a HERO")) {
+    	
+    } else {
+    	
+    }
 }
 function _10_Miles () {
 	
@@ -380,7 +388,7 @@ function Drink_Ice_Tea () {
     } else if (story.checkLastAnswer("Spider powers")) {
     	
     } else {
-    	
+        Lazer_eyes()
     }
 }
 let Dinosaur: Sprite = null

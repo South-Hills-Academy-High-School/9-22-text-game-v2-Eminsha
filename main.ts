@@ -131,14 +131,22 @@ function Traveler () {
     game.over(true, effects.confetti)
 }
 function Lazer_eyes () {
-    story.printText("You got Lzaer eyes", 75, 110)
+    story.printText("You got Lazer eyes", 75, 110)
     story.printText("Great powers come with responsiblity", 75, 110)
     story.printText("What do you do with this powers?", 75, 110)
     story.showPlayerChoices("Become a HERO", "Become a VILLAN")
     if (story.checkLastAnswer("Become a HERO")) {
-    	
+        story.printText("Let the Evil fall before you", 75, 110)
+        story.printText("Because they are faceing the unstopable one", 75, 110)
+        scene.cameraShake(4, 500)
+        story.printText("LazerMan!!", 75, 110)
     } else {
-    	
+        story.printText("You use your powers for your own benifit", 75, 110)
+        story.printText("You destroy cityes one by one", 75, 110)
+        story.printText("People kneel before you calling you a king", 75, 110)
+        story.printText("Hail to ALLMIGHTY", 75, 110)
+        scene.cameraShake(4, 500)
+        story.printText("DOMINATROR!!!", 75, 110)
     }
 }
 function _10_Miles () {
